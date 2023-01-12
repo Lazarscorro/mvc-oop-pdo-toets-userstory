@@ -3,17 +3,17 @@ body{
     
 }
 .button{
-    background-color: green;
+    background-color: rgb(59, 250, 59);
 }
 .topicError {
-    font-size: 0.8em;
+    font-size: 0.5em;
     color: red;
 }
 .opmerkingError {
-    font-size: 0.8em;
+    font-size: 0.5em;
     color: red;
 }
 .MankementError {
-    font-size: 1.2em;
+    font-size: 1.8em;
     color: red;
 }
