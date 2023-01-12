@@ -19,9 +19,9 @@ class Mankement extends Controller {
 
         $data=[ 
             'title' => "Overzicht Mankementen",
-            'Naam' => "manhoi",
+            'Naam' => "Manhoi",
             'Email' => "manhoi@gmail.com",
-            'Kenteken'=> "TH-78-KL - Ferrari",
+            'Kenteken'=> "TH-78-KL -- Ferrari",
             'AutoId' => $AutoId,
             'rows' => $rows
         ];
@@ -30,7 +30,7 @@ class Mankement extends Controller {
     public function addMankement($AutoId = NUll)
     {
         $data = [
-            'title' => 'Invoeren Mankement',
+            'title' => 'Invoeren mankement',
             'Kenteken' => "TH-78-KL - Ferari" ,
             'AutoId' => $AutoId,
             'MankementError' => ''
@@ -38,7 +38,7 @@ class Mankement extends Controller {
         if($_SERVER['REQUEST_METHOD'] == 'POST') {
            $_POST = filter_input_array(INPUT_POST, FILTER_SANITIZE_FULL_SPECIAL_CHARS);
            $data = [ 
-                'title' => 'Invoeren Mankement',
+                'title' => 'Invoeren mankement',
                 'Kenteken' => "TH-78-KL - Ferari" ,
                 'AutoId' => $_POST['AutoId'],
                 'Mankement' => $_POST['Mankement'],
@@ -64,7 +64,7 @@ class Mankement extends Controller {
     private function validateAddMankementForm($data)
     {
         if (strlen($data['Mankement']) > 50) {
-            $data['MankementError'] = "Het nieuwe mankement is meer dan 50 tekens lang en is niet toegevoegd, probeer het opnieuw";
+            $data['MankementError'] = "Het nieuwe mankement is meer dan 50 karakters lang en is niet toegevoegd, probeer het opnieuw ";
         } elseif (empty($data['Mankement']))
         {
              $data['MankementError'] = "U bent verplicht om de mankement invullen";
