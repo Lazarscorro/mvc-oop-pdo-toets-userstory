@@ -12,4 +12,4 @@ define('APPROOT', dirname(dirname(__FILE__)));
 define('URLROOT', 'http://mvc-oop-pdo-toets-userstory.com');
 
 // Naam van de site
-define('SITENAME', 'MVC-userstory');
+define('SITENAME', 'MVC - userstory');
