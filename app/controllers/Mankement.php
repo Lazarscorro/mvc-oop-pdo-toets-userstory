@@ -49,9 +49,9 @@ class Mankement extends Controller {
             $result = $this->mankementModel->addMankement($_POST);
 
             if ($result) {
-                $data['title'] = "<p>Het nieuwe mankement is toegevoegd</p>";
+                $data['title'] = "<p>Het nieuwe mankement is toegevoegd!</p>";
             } else {
-                echo "<p>Het nieuwe mankement is niet toegevoegd</p>";
+                echo "<p>Het nieuwe mankement is niet toegevoegd :c</p>";
             }
             header('Refresh:2 url=' . URLROOT . '/mankement/index');
         } else {
