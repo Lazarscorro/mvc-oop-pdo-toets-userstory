@@ -1,7 +1,7 @@
 <?php require(APPROOT . '/views/includes/header.php'); ?>
 <h2><?= $data['title']; ?></h2>
 
-<h4><?= 'Auto van instructeur: ' .  $data['Naam'] ?></h4>
+<h4><?= ' Instructeur naam: ' .  $data['Naam'] ?></h4>
 <h4><?= 'E-mailadres: ' .  $data['Email'] ?></h4>
 <h4><?= 'Kenteken Auto: ' .  $data['Kenteken'] ?></h4>
 
