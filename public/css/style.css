@@ -1,0 +1,19 @@
+body{
+    font-family: Verdana;
+    
+}
+.button{
+    background-color: green;
+}
+.topicError {
+    font-size: 0.8em;
+    color: red;
+}
+.opmerkingError {
+    font-size: 0.8em;
+    color: red;
+}
+.MankementError {
+    font-size: 1.2em;
+    color: red;
+}
